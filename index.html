@@ -126,6 +126,16 @@
         left: 7px;
         top: 7px;
     }
+    .text-bold{
+        font-weight: bold;
+    }
+    .descricao-vazia{
+        font-style: italic;
+        color: #888;
+    }
+    option{
+      text-transform: uppercase;
+    }
     @media only screen and (max-width:767px){
         .checkbox{ margin: 0 0 20px; }
     }
@@ -140,7 +150,7 @@
     <div class="campl-wrap clearfix">
       <div class="ufop-accesibility-menu">
         <a href="#" id="ufop-contrast" class="item"><i class="fa fa-adjust"></i> Alto Contraste</a>
-        <a href="http://ufop.br/acessibilidade" class="item"><i class="fa fa-wheelchair"></i> Acessibilidade</a>
+        <a href="#" class="item"><i class="fa fa-wheelchair"></i> Acessibilidade</a>
         <div class="clearfix"></div>
       </div>
       <div class="campl-column14 page-header">
@@ -148,7 +158,7 @@
 
 
 
-          <a id="portal-logo" title="" href="http://www.ufop.br">
+          <a id="portal-logo" title="" href="#">
             <img src="https://ufop.br/sites/default/files/site_logo_ufop_txtwte_0.png" class="campl-co-branding-logo"
               alt="" /></a>
 
@@ -171,7 +181,7 @@
             <form action="#" method="get">
               <input id="header-search" type="text" name="query" value="" placeholder="Buscar" />
               <input type="image" class="campl-search-submit"
-                src="/profiles/cambridge/themes/cambridge_theme/images/interface/btn-search-header.png" />
+                src="https://www.ufop.br/profiles/cambridge/themes/cambridge_theme/images/interface/btn-search-header.png" />
             </form>
           </div>
         </div>
@@ -435,6 +445,9 @@
               </div>
               <div>
                 <div class="view view-list-pages view-id-list_pages view-display-id-block clearfix view-dom-id-bffe8848be1182fa193654e683d89cad">
+                  
+                  
+                  
                   <div class="view-content d-none" id="conteudoAlternativo">
                     <div class="campl-row">
                       <div class="campl-column12 campl-hide-teaser-divider campl-teasers-borders campl-column-first">
@@ -444,7 +457,6 @@
                               <div class="field field-name-field-imagem-destaque field-type-image field-label-hidden">
                                 <div class="field-items">
                                   <div class="field-item even">
-                                    
                                     <div class="jumbotron text-center" style="
                                     border-radius:.5em;
                                     margin:0;
@@ -471,8 +483,10 @@
                                         <p style="color:#111">Utilize os filtros abaixo para encontrar o projeto desejado</p>
                                       </div>
                                     </div>
+                                    
+                                    <p onclick="toggleVisualizacao()" style="margin:1em 0;cursor:pointer">← Voltar</p>
                                     <div class="jumbotron" style="
-                                    margin:1em 0;
+                                    margin: 0;
                                     padding:1em 3em;
                                     border-radius:.5em;
                                     box-shadow: 0 0px 1em #55555555 inset;
@@ -529,7 +543,7 @@
                                         </div>
                                         <div class="row" style="margin-top:1em">
                                           <div class="col-sm-4">
-                                            <label>Departamento<i> - Pressione CTRL para selecionar mais)</i></label>
+                                            <label>Departamento<i> - Pressione CTRL para selecionar mais</i></label>
                                             <select id="departamentos" class="form-control" style="height:6em;font-size:1.25em" multiple>
                                               <option value="">DECEA</option>
                                               <option value="">DECSI</option>
@@ -538,7 +552,7 @@
                                             </select>
                                           </div>
                                           <div class="col-sm-4">
-                                            <label>Campus<i> - Pressione CTRL para selecionar mais)</i></label>
+                                            <label>Campus<i> - Pressione CTRL para selecionar mais</i></label>
                                             <select id="campus" class="form-control" style="height:6em;font-size:1.25em" multiple>
                                               <option value="1">ICEA - João Monlevade</option>
                                               <option value="2">ICHS - Mariana</option>
@@ -547,9 +561,11 @@
                                             </select>
                                           </div>
                                           <div class="col-sm-4">
-                                            <label>Professores<i> - Pressione CTRL para selecionar mais)</i></label>
+                                            <label>Professores<i> - Pressione CTRL para selecionar mais</i></label>
                                             <select id="professores" class="form-control" style="height:6em;font-size:1.25em" multiple>
                                               <option value="1">Frederico Cesar de Vasconcelos Gomes</option>
+                                              <option value="1">LUCILIA ALVES LINHARES</option>
+                                              <option value="1">GLAUCO FERREIRA GAZEL YARED</option>
                                               <option value="1">Theo Silva Lins</option>
                                               <option value="1">Tatiana Alves Costa</option>
                                               <option value="1">Rita de Cassia Oliveira</option>
@@ -571,17 +587,22 @@
                                         <div class="row">
                                           <div class="col-sm-4"
                                           style="
-                                          background: url('https://icea20anos.ufop.br/wp-content/uploads/2022/08/LOGO-DEENP-cor-PNG.png');
+                                          background: url('https://uploaddeimagens.com.br/images/004/403/350/full/1.png?1679528183');
                                           background-size: contain;
                                           background-position: center;
                                           background-repeat: no-repeat;
-                                          min-height: 10em;
+                                          min-height: 20em;
                                           "></div>
                                           <div class="col-sm-6">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, enim laborum? Rem voluptatem facere delectus tempore dignissimos atque commodi minima vero maxime. Dolorum consequuntur, delectus molestiae laborum distinctio voluptas qui.
+                                            <h3 class="text-bold">Projeto Podcast</h3>
+                                            <p>
+                                            Funções:<br>
+                                            Trabalhar na edição, criação, execução e divulgação do podcast sobre o trabalho invisivel de microempreendedores e trabalhores que 
+                                            ocupam...
+                                            </p>
                                           </div>
                                           <div class="col-sm-2">
-                                            <div class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
+                                            <div onclick="togglePodcast()" class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
                                               Acessar<br>
                                               <i class="fas fa-external-link"></i>
                                             </div>
@@ -598,17 +619,20 @@
                                         <div class="row">
                                           <div class="col-sm-4"
                                           style="
-                                          background: url('data:image/png;base64,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');
+                                          background: url('https://uploaddeimagens.com.br/images/004/403/353/full/3.png?1679528290');
                                           background-size: contain;
                                           background-position: center;
                                           background-repeat: no-repeat;
-                                          min-height: 10em;
+                                          min-height: 20em;
                                           "></div>
                                           <div class="col-sm-6">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint dolorum obcaecati tempora sed cum possimus repellat! Debitis suscipit, eum voluptate, minus expedita iste beatae laborum dolor, voluptatem sed dolore.
+                                            <h3 class="text-bold">Projeto Masterclass</h3>
+                                            <p>
+                                              Participar da elaboração e da apresentação de masterclass sobre o projeto podcast em escolas de João Monlevade e região
+                                            </p>
                                           </div>
                                           <div class="col-sm-2">
-                                            <div class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
+                                            <div onclick="toggleMasterclass()" class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
                                               Acessar<br>
                                               <i class="fas fa-external-link"></i>
                                             </div>
@@ -621,129 +645,246 @@
                                       border-radius: .5em;
                                       padding: 2em;
                                       backdrop-filter: brightness(1.25)
-                                      " id="projeto-decsi">
+                                      " id="projeto-visao">
                                         <div class="row">
                                           <div class="col-sm-4"
                                           style="
-                                          background: url('https://decsi.ufop.br/sites/default/files/styles/os_files_medium/public/decsi/files/visao.png?m=1525725032&itok=CP6xksUe');
-                                          background-size: 100%, auto, contain;
+                                          background: url('https://wx.mlcdn.com.br/ponzi/production/portaldalu/5071.jpg?ims=fit-in/960x');
+                                          background-size: contain;
                                           background-position: center;
                                           background-repeat: no-repeat;
-                                          min-height: 10em;
+                                          min-height: 20em;
                                           "></div>
                                           <div class="col-sm-6">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint dolorum obcaecati tempora sed cum possimus repellat! Debitis suscipit, eum voluptate, minus expedita iste beatae laborum dolor, voluptatem sed dolore.
+                                            <h3 class="text-bold">O Esporte como Forma de Inclusão Social</h3>
+                                            <p>
+                                              O projeto possui abertura para participação de estudantes de todos cursos do ICEA e pretende oferecer treinos de Futsal masculino e feminino para a comunidade de João Monlevade e região.
+                                            </p>
                                           </div>
                                           <div class="col-sm-2">
-                                            <div class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
+                                            <div onclick="toggleFutsal()" class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
                                               Acessar<br>
                                               <i class="fas fa-external-link"></i>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
+
                                       <div style="
                                       margin: 1em 0;
                                       border-radius: .5em;
                                       padding: 2em;
                                       backdrop-filter: brightness(1.25)
-                                      " id="projeto-decsi">
+                                      " id="projeto-visao">
                                         <div class="row">
                                           <div class="col-sm-4"
                                           style="
-                                          background: url('https://decsi.ufop.br/sites/default/files/styles/os_files_medium/public/decsi/files/visao.png?m=1525725032&itok=CP6xksUe');
-                                          background-size: 100%, auto, contain;
+                                          background: url('https://img.freepik.com/vetores-gratis/equipamento-de-laboratorio-com-copo-de-frasco-de-tubos-de-vidro-e-outros-equipamentos-de-medicao-de-laboratorio-quimico-ou-de-medicina-estilo-de-desenho-animado-para-designer-grafico-conceito-de-educacao-cientifica-de-biologia-ilustracao-vetorial_1150-60471.jpg?w=740&t=st=1679528372~exp=1679528972~hmac=e2d33865951b39f77acf240d97187fa0733b3f5a59a167fbba072405a2d2c17f');
+                                          background-size: contain;
                                           background-position: center;
                                           background-repeat: no-repeat;
-                                          min-height: 10em;
+                                          min-height: 20em;
                                           "></div>
                                           <div class="col-sm-6">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint dolorum obcaecati tempora sed cum possimus repellat! Debitis suscipit, eum voluptate, minus expedita iste beatae laborum dolor, voluptatem sed dolore.
+                                            <h3 class="text-bold">Ensino de Química por meio de experimentos para alunos </h3>
+                                            <p>
+                                              <span class="descricao-vazia">Nenhuma descrição fornecida pelo/a professor/a responsável</span>
+                                            </p>
                                           </div>
                                           <div class="col-sm-2">
-                                            <div class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
+                                            <div onclick="toggleQuimica()" class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
                                               Acessar<br>
                                               <i class="fas fa-external-link"></i>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
+
                                       <div style="
                                       margin: 1em 0;
                                       border-radius: .5em;
                                       padding: 2em;
                                       backdrop-filter: brightness(1.25)
-                                      " id="projeto-decsi">
+                                      " id="projeto-visao">
                                         <div class="row">
                                           <div class="col-sm-4"
                                           style="
-                                          background: url('https://decsi.ufop.br/sites/default/files/styles/os_files_medium/public/decsi/files/visao.png?m=1525725032&itok=CP6xksUe');
-                                          background-size: 100%, auto, contain;
+                                          background: url('https://s1.static.brasilescola.uol.com.br/be/conteudo/images/deb195e361f7a8b215f0e6854cbc8714.jpg');
+                                          background-size: contain;
                                           background-position: center;
                                           background-repeat: no-repeat;
-                                          min-height: 10em;
+                                          min-height: 20em;
                                           "></div>
                                           <div class="col-sm-6">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint dolorum obcaecati tempora sed cum possimus repellat! Debitis suscipit, eum voluptate, minus expedita iste beatae laborum dolor, voluptatem sed dolore.
+                                            <h3 class="text-bold">Preparatório para Química Orgânica </h3>
+                                            <p>
+                                              <span class="">Preparatório para Química Orgânica (Cursinho pré vestibular da Ufop) para alunos de 1° e 2° anos do ensino médio</span>
+                                            </p>
                                           </div>
                                           <div class="col-sm-2">
-                                            <div class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
+                                            <div onclick="toggleOrganica()" class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
                                               Acessar<br>
                                               <i class="fas fa-external-link"></i>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
+
                                       <div style="
                                       margin: 1em 0;
                                       border-radius: .5em;
                                       padding: 2em;
                                       backdrop-filter: brightness(1.25)
-                                      " id="projeto-decsi">
+                                      " id="projeto-visao">
                                         <div class="row">
                                           <div class="col-sm-4"
                                           style="
-                                          background: url('https://decsi.ufop.br/sites/default/files/styles/os_files_medium/public/decsi/files/visao.png?m=1525725032&itok=CP6xksUe');
-                                          background-size: 100%, auto, contain;
+                                          background: url('data:image/jpeg;base64,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');
+                                          background-size: contain;
                                           background-position: center;
                                           background-repeat: no-repeat;
-                                          min-height: 10em;
+                                          min-height: 20em;
                                           "></div>
                                           <div class="col-sm-6">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint dolorum obcaecati tempora sed cum possimus repellat! Debitis suscipit, eum voluptate, minus expedita iste beatae laborum dolor, voluptatem sed dolore.
+                                            <h3 class="text-bold">Preparatório para Química Inorgânica </h3>
+                                            <p>
+                                              <span class="">Preparatório para Química Inorgânica (Cursinho pré vestibular da Ufop) para alunos de 1° e 2° anos do ensino médio</span>
+                                            </p>
                                           </div>
                                           <div class="col-sm-2">
-                                            <div class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
+                                            <div onclick="toggleInorganica()" class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
                                               Acessar<br>
                                               <i class="fas fa-external-link"></i>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <!-- PÁGINA DO PROJETO -->
+                  <div class="view-content d-none" id="conteudoprojeto1">
+                    <div class="campl-row">
+                      <div class="campl-column12 campl-hide-teaser-divider campl-teasers-borders campl-column-first">
+                        <div class="campl-content-container campl-vertical-padding node node-news-article">
+                          <div class="campl-vertical-teaser campl-teaser campl-teaser-border campl-content-container campl-side-padding">
+                            <div class="campl-content-container campl-vertical-teaser-img">
+                              <div class="field field-name-field-imagem-destaque field-type-image field-label-hidden">
+                                <div class="field-items">
+                                  <div class="field-item even">
+                                    <div class="jumbotron text-center" style="
+                                    border-radius:.5em;
+                                    margin:0;
+                                    padding:2em 0em;
+                                    background-image: url('https://icea.ufop.br/sites/default/files/styles/os_files_xxlarge/public/icea/files/predios_e_cantina.jpg?m=1617829490&itok=LD3adigM');
+                                    background-size: cover;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    box-shadow: 0 -10px 5em 2em #fff inset;
+                                    ">
+                                      <div  style="
+                                      margin: 0 2em;
+                                      border-radius: 1em;
+                                      padding: 2em 5em;
+                                      background: radial-gradient(white,#ffffffbb, transparent);
+                                      backdrop-filter: 
+                                        blur(6px)
+                                        hue-rotate(35deg)
+                                        brightness(1.25)
+                                        saturate(1.5)
+                                        sepia(.35);
+                                      ">
+                                        <h1 style="color:black">Projeto podcast</h1>
+                                        <p style="color:#111">Por: Frederico César de Vasconcelos Gomes</p>
+                                      </div>
+                                    </div>
+                                    
+                                    <p onclick="togglePodcast()" style="margin:1em 0;cursor:pointer">← Voltar</p>
+                                    <div class="jumbotron" style="
+                                    margin: 0;
+                                    padding:1em 3em;
+                                    border-radius:.5em;
+                                    box-shadow: 0 0px 1em #55555555 inset;
+                                    ">
+                                      <h3>Detalhes do projeto</h3>
+                                      <button class="btn btn-default" id="buscar" style="
+                                        font-size:1.5em;
+                                        background:#ad2a43;
+                                        color:white;
+                                        position:absolute;
+                                        right:2em;
+                                        margin-top:-2.5em;
+                                        ">Candidatar</button>
+                                      <hr>
+                                      <div class="collapse show" id="collapse-filtros">
+                                        <div class="row">
+                                          <div class="col-sm-6">
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Professor:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>Frederico César de Vasconcelos Gomes</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Departamento:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>DEENP</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Campus:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>ICEA</h4>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-6" style="border-left: 2px solid #ddd">
+                                            <h3 class="text-bold" style="margin-top:0;padding-top:0">Resumo:</h3>
+                                            <p>O projeto será coordenado pelo professor Fred e terá duração de 2 anos. <br>
+                                              Funções:<br>
+                                              Trabalhar na edição, criação, execução e divulgação do podcast sobre o trabalho invisivel de microempreendedores e trabalhores que 
+                                              ocupam funções que não possuem visibilidade e prestigio social. Realizaremos uma serie de entrevistas com as pessoas selecionadas.<br>
+                                              Queremos com esse projeto trazer luz para atividades que são economicamente e socialmente ignoradas pela sociedade.
+                                            </p>                                            
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <h3 class="text-bold">Beneficios: </h3><p>
+                                            Inicialmente ofertaremos 04 vagas para bolsistas voluntarios. 
+                                            Existe a possibilidade da conversão de uma dessas vagas para uma bolsa remunerada. 
+                                            Na seleção já faremos a escolha daqueles que serão voluntarios e daquele que poderá receber uma bolsa remunerada. 
+                                            A seleção se dará por meia de entrevista via googlemeet ou presencial.
+                                          </p>
+                                        </div>
+                                      </div>
+
                                       <div style="
                                       margin: 1em 0;
                                       border-radius: .5em;
-                                      padding: 2em;
+                                      padding: 1em 2em;
                                       backdrop-filter: brightness(1.25)
                                       " id="projeto-decsi">
                                         <div class="row">
-                                          <div class="col-sm-4"
-                                          style="
-                                          background: url('https://decsi.ufop.br/sites/default/files/styles/os_files_medium/public/decsi/files/visao.png?m=1525725032&itok=CP6xksUe');
-                                          background-size: 100%, auto, contain;
-                                          background-position: center;
-                                          background-repeat: no-repeat;
-                                          min-height: 10em;
-                                          "></div>
-                                          <div class="col-sm-6">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint dolorum obcaecati tempora sed cum possimus repellat! Debitis suscipit, eum voluptate, minus expedita iste beatae laborum dolor, voluptatem sed dolore.
-                                          </div>
-                                          <div class="col-sm-2">
-                                            <div class="btn btn-default" style="background:#ad2a43;color:white;width:100%;height:5em;font-size:1.8em">
-                                              Acessar<br>
-                                              <i class="fas fa-external-link"></i>
-                                            </div>
-                                          </div>
+                                          <h3 >Contato:  </h3><hr>
+                                          <p>  
+                                            Aos interessados:<br>
+                                            Enviar email (frederico@ufop.edu.br) até o final do dia 27 de fevereiro. 
+                                            Será agendado com todos uma entrevista no dia 28 de fevereiro, terça-feira, no horário entre 17 
+                                            e 19 horas.
+                                          </p>
                                         </div>
                                       </div>
 
@@ -759,6 +900,615 @@
                       </div>
                     </div>
                   </div>
+
+
+
+                  <div class="view-content d-none" id="conteudoprojeto2">
+                    <div class="campl-row">
+                      <div class="campl-column12 campl-hide-teaser-divider campl-teasers-borders campl-column-first">
+                        <div class="campl-content-container campl-vertical-padding node node-news-article">
+                          <div class="campl-vertical-teaser campl-teaser campl-teaser-border campl-content-container campl-side-padding">
+                            <div class="campl-content-container campl-vertical-teaser-img">
+                              <div class="field field-name-field-imagem-destaque field-type-image field-label-hidden">
+                                <div class="field-items">
+                                  <div class="field-item even">
+                                    <div class="jumbotron text-center" style="
+                                    border-radius:.5em;
+                                    margin:0;
+                                    padding:2em 0em;
+                                    background-image: url('https://icea.ufop.br/sites/default/files/styles/os_files_xxlarge/public/icea/files/predios_e_cantina.jpg?m=1617829490&itok=LD3adigM');
+                                    background-size: cover;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    box-shadow: 0 -10px 5em 2em #fff inset;
+                                    ">
+                                      <div  style="
+                                      margin: 0 2em;
+                                      border-radius: 1em;
+                                      padding: 2em 5em;
+                                      background: radial-gradient(white,#ffffffbb, transparent);
+                                      backdrop-filter: 
+                                        blur(6px)
+                                        hue-rotate(35deg)
+                                        brightness(1.25)
+                                        saturate(1.5)
+                                        sepia(.35);
+                                      ">
+                                        <h1 style="color:black">Projeto Masterclass</h1>
+                                        <p style="color:#111">Por: Frederico César de Vasconcelos Gomes</p>
+                                      </div>
+                                    </div>
+                                    
+                                    <p onclick="toggleMasterclass()" style="margin:1em 0;cursor:pointer">← Voltar</p>
+                                    <div class="jumbotron" style="
+                                    margin: 0;
+                                    padding:1em 3em;
+                                    border-radius:.5em;
+                                    box-shadow: 0 0px 1em #55555555 inset;
+                                    ">
+                                      <h3>Detalhes do projeto</h3>
+                                      <button class="btn btn-default" id="buscar" style="
+                                        font-size:1.5em;
+                                        background:#ad2a43;
+                                        color:white;
+                                        position:absolute;
+                                        right:2em;
+                                        margin-top:-2.5em;
+                                        ">Candidatar</button>
+                                      <hr>
+                                      <div class="collapse show" id="collapse-filtros">
+                                        <div class="row">
+                                          <div class="col-sm-6">
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Professor:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>Frederico César de Vasconcelos Gomes</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Departamento:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>DEENP</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Campus:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>ICEA</h4>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-6" style="border-left: 2px solid #ddd">
+                                            <h3 class="text-bold" style="margin-top:0;padding-top:0">Resumo:</h3>
+                                            <p>
+                                              Participar da elaboração e da apresentação de masterclass sobre o projeto podcast em escolas de João Monlevade e região
+                                              <br>
+                                              Perfil:<br>
+                                              Criativo
+                                              Comunicativo
+                                              Vontade de desenvolver habilidades oratórias
+                                            </p>                                            
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <h3 class="text-bold">Beneficios: </h3><p>
+                                            01 vaga - inicialmente como bolsista voluntario, podendo ser convertida numa bolsa remunerada
+                                          </p>
+                                        </div>
+                                      </div>
+
+                                      <div style="
+                                      margin: 1em 0;
+                                      border-radius: .5em;
+                                      padding: 1em 2em;
+                                      backdrop-filter: brightness(1.25)
+                                      " id="projeto-decsi">
+                                        <div class="row">
+                                          <h3 >Contato:  </h3><hr>
+                                          <p>  
+                                            Aos interessados:<br>
+                                            Enviar email (frederico@ufop.edu.br) até o final do dia 27 de fevereiro. 
+                                            Será agendado com todos uma entrevista no dia 28 de fevereiro, terça-feira, no horário entre 17 
+                                            e 19 horas.
+                                          </p>
+                                        </div>
+                                      </div>
+
+
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  <div class="view-content d-none" id="conteudoprojeto3">
+                    <div class="campl-row">
+                      <div class="campl-column12 campl-hide-teaser-divider campl-teasers-borders campl-column-first">
+                        <div class="campl-content-container campl-vertical-padding node node-news-article">
+                          <div class="campl-vertical-teaser campl-teaser campl-teaser-border campl-content-container campl-side-padding">
+                            <div class="campl-content-container campl-vertical-teaser-img">
+                              <div class="field field-name-field-imagem-destaque field-type-image field-label-hidden">
+                                <div class="field-items">
+                                  <div class="field-item even">
+                                    <div class="jumbotron text-center" style="
+                                    border-radius:.5em;
+                                    margin:0;
+                                    padding:2em 0em;
+                                    background-image: url('https://icea.ufop.br/sites/default/files/styles/os_files_xxlarge/public/icea/files/predios_e_cantina.jpg?m=1617829490&itok=LD3adigM');
+                                    background-size: cover;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    box-shadow: 0 -10px 5em 2em #fff inset;
+                                    ">
+                                      <div  style="
+                                      margin: 0 2em;
+                                      border-radius: 1em;
+                                      padding: 2em 5em;
+                                      background: radial-gradient(white,#ffffffbb, transparent);
+                                      backdrop-filter: 
+                                        blur(6px)
+                                        hue-rotate(35deg)
+                                        brightness(1.25)
+                                        saturate(1.5)
+                                        sepia(.35);
+                                      ">
+                                        <h1 style="color:black">O Esporte como Forma de Inclusão Social</h1>
+                                        <p style="color:#111">Por: GLAUCO FERREIRA GAZEL YARED</p>
+                                      </div>
+                                    </div>
+                                    
+                                    <p onclick="toggleFutsal()" style="margin:1em 0;cursor:pointer">← Voltar</p>
+                                    <div class="jumbotron" style="
+                                    margin: 0;
+                                    padding:1em 3em;
+                                    border-radius:.5em;
+                                    box-shadow: 0 0px 1em #55555555 inset;
+                                    ">
+                                      <h3>Detalhes do projeto</h3>
+                                      <button class="btn btn-default" id="buscar" style="
+                                        font-size:1.5em;
+                                        background:#ad2a43;
+                                        color:white;
+                                        position:absolute;
+                                        right:2em;
+                                        margin-top:-2.5em;
+                                        ">Candidatar</button>
+                                      <hr>
+                                      <div class="collapse show" id="collapse-filtros">
+                                        <div class="row">
+                                          <div class="col-sm-6">
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Professor:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>GLAUCO FERREIRA GAZEL YARED</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Departamento:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>DECEA</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Campus:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>ICEA</h4>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-6" style="border-left: 2px solid #ddd">
+                                            <h3 class="text-bold" style="margin-top:0;padding-top:0">Resumo:</h3>
+                                            <p>
+                                              O projeto possui abertura para participação de estudantes de todos cursos do ICEA e pretende oferecer treinos de Futsal masculino e feminino para a comunidade de João Monlevade e região.
+                                            </p>                                            
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <h3 class="text-bold">Beneficios: </h3><p>
+                                            Bolsista e voluntários/voluntárias
+                                          </p>
+                                        </div>
+                                      </div>
+
+                                      <div style="
+                                      margin: 1em 0;
+                                      border-radius: .5em;
+                                      padding: 1em 2em;
+                                      backdrop-filter: brightness(1.25)
+                                      " id="projeto-decsi">
+                                        <div class="row">
+                                          <h3 >Contato:  </h3><hr>
+                                          <p>  
+                                            Aos interessados:<br>
+                                            <span class="text-bold">e-mail:</span> (glauco@ufop.edu.br) <br>
+                                            <span class="descricao-vazia">Nenhuma outra informação fornecida pelo/a professor/a responsável</span>
+                                          </p>
+                                        </div>
+                                      </div>
+
+
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  <div class="view-content d-none" id="conteudoprojeto4">
+                    <div class="campl-row">
+                      <div class="campl-column12 campl-hide-teaser-divider campl-teasers-borders campl-column-first">
+                        <div class="campl-content-container campl-vertical-padding node node-news-article">
+                          <div class="campl-vertical-teaser campl-teaser campl-teaser-border campl-content-container campl-side-padding">
+                            <div class="campl-content-container campl-vertical-teaser-img">
+                              <div class="field field-name-field-imagem-destaque field-type-image field-label-hidden">
+                                <div class="field-items">
+                                  <div class="field-item even">
+                                    <div class="jumbotron text-center" style="
+                                    border-radius:.5em;
+                                    margin:0;
+                                    padding:2em 0em;
+                                    background-image: url('https://icea.ufop.br/sites/default/files/styles/os_files_xxlarge/public/icea/files/predios_e_cantina.jpg?m=1617829490&itok=LD3adigM');
+                                    background-size: cover;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    box-shadow: 0 -10px 5em 2em #fff inset;
+                                    ">
+                                      <div  style="
+                                      margin: 0 2em;
+                                      border-radius: 1em;
+                                      padding: 2em 5em;
+                                      background: radial-gradient(white,#ffffffbb, transparent);
+                                      backdrop-filter: 
+                                        blur(6px)
+                                        hue-rotate(35deg)
+                                        brightness(1.25)
+                                        saturate(1.5)
+                                        sepia(.35);
+                                      ">
+                                        <h1 style="color:black">Ensino de Química por meio de experimentos para alunos </h1>
+                                        <p style="color:#111">Por: LUCILIA ALVES LINHARES</p>
+                                      </div>
+                                    </div>
+                                    
+                                    <p onclick="toggleQuimica()" style="margin:1em 0;cursor:pointer">← Voltar</p>
+                                    <div class="jumbotron" style="
+                                    margin: 0;
+                                    padding:1em 3em;
+                                    border-radius:.5em;
+                                    box-shadow: 0 0px 1em #55555555 inset;
+                                    ">
+                                      <h3>Detalhes do projeto</h3>
+                                      <button class="btn btn-default" id="buscar" style="
+                                        font-size:1.5em;
+                                        background:#ad2a43;
+                                        color:white;
+                                        position:absolute;
+                                        right:2em;
+                                        margin-top:-2.5em;
+                                        ">Candidatar</button>
+                                      <hr>
+                                      <div class="collapse show" id="collapse-filtros">
+                                        <div class="row">
+                                          <div class="col-sm-6">
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Professor:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>LUCILIA ALVES LINHARES</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Departamento:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>DECEA, DEQUI</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Campus:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>ICEA</h4>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-6" style="border-left: 2px solid #ddd">
+                                            <h3 class="text-bold" style="margin-top:0;padding-top:0">Resumo:</h3>
+                                            <p>
+                                              <span class="descricao-vazia">Nenhuma descrição fornecida pelo/a professor/a responsável</span>
+                                            </p>                                            
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <h3 class="text-bold">Beneficios: </h3><p>
+                                            1 bolsista e 1 voluntario
+                                          </p>
+                                        </div>
+                                      </div>
+
+                                      <div style="
+                                      margin: 1em 0;
+                                      border-radius: .5em;
+                                      padding: 1em 2em;
+                                      backdrop-filter: brightness(1.25)
+                                      " id="projeto-decsi">
+                                        <div class="row">
+                                          <h3 >Contato:  </h3><hr>
+                                          <p>  
+                                            Aos interessados:<br>
+                                            <span class="text-bold">e-mail:</span> (lucilia@ufop.edu.br) <br>
+                                            Área de química do ICEA<br>
+                                            <span class="descricao-vazia">Nenhuma outra informação fornecida pelo/a professor/a responsável</span>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                            
+                  <div class="view-content d-none" id="conteudoprojeto5">
+                    <div class="campl-row">
+                      <div class="campl-column12 campl-hide-teaser-divider campl-teasers-borders campl-column-first">
+                        <div class="campl-content-container campl-vertical-padding node node-news-article">
+                          <div class="campl-vertical-teaser campl-teaser campl-teaser-border campl-content-container campl-side-padding">
+                            <div class="campl-content-container campl-vertical-teaser-img">
+                              <div class="field field-name-field-imagem-destaque field-type-image field-label-hidden">
+                                <div class="field-items">
+                                  <div class="field-item even">
+                                    <div class="jumbotron text-center" style="
+                                    border-radius:.5em;
+                                    margin:0;
+                                    padding:2em 0em;
+                                    background-image: url('https://icea.ufop.br/sites/default/files/styles/os_files_xxlarge/public/icea/files/predios_e_cantina.jpg?m=1617829490&itok=LD3adigM');
+                                    background-size: cover;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    box-shadow: 0 -10px 5em 2em #fff inset;
+                                    ">
+                                      <div  style="
+                                      margin: 0 2em;
+                                      border-radius: 1em;
+                                      padding: 2em 5em;
+                                      background: radial-gradient(white,#ffffffbb, transparent);
+                                      backdrop-filter: 
+                                        blur(6px)
+                                        hue-rotate(35deg)
+                                        brightness(1.25)
+                                        saturate(1.5)
+                                        sepia(.35);
+                                      ">
+                                        <h1 style="color:black">Preparatório para Química Orgânica </h1>
+                                        <p style="color:#111">Por: LUCILIA ALVES LINHARES</p>
+                                      </div>
+                                    </div>
+                                    
+                                    <p onclick="toggleOrganica()" style="margin:1em 0;cursor:pointer">← Voltar</p>
+                                    <div class="jumbotron" style="
+                                    margin: 0;
+                                    padding:1em 3em;
+                                    border-radius:.5em;
+                                    box-shadow: 0 0px 1em #55555555 inset;
+                                    ">
+                                      <h3>Detalhes do projeto</h3>
+                                      <button class="btn btn-default" id="buscar" style="
+                                        font-size:1.5em;
+                                        background:#ad2a43;
+                                        color:white;
+                                        position:absolute;
+                                        right:2em;
+                                        margin-top:-2.5em;
+                                        ">Candidatar</button>
+                                      <hr>
+                                      <div class="collapse show" id="collapse-filtros">
+                                        <div class="row">
+                                          <div class="col-sm-6">
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Professor:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>LUCILIA ALVES LINHARES</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Departamento:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>DECEA, DEQUI</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Campus:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>ICEA</h4>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-6" style="border-left: 2px solid #ddd">
+                                            <h3 class="text-bold" style="margin-top:0;padding-top:0">Resumo:</h3>
+                                            <p>
+                                              Preparatório para Química Orgânica (Cursinho pré vestibular da Ufop)para alunos de 1° e 2° anos do ensino médio
+                                            </p>                                            
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <h3 class="text-bold">Beneficios: </h3><p>
+                                            20 horas semanais<br>Bolsa no valor de R$400,00 mensais
+                                          </p>
+                                        </div>
+                                      </div>
+
+                                      <div style="
+                                      margin: 1em 0;
+                                      border-radius: .5em;
+                                      padding: 1em 2em;
+                                      backdrop-filter: brightness(1.25)
+                                      " id="projeto-decsi">
+                                        <div class="row">
+                                          <h3 >Contato:  </h3><hr>
+                                          <p>  
+                                            Aos interessados:<br>
+                                            <span class="text-bold">e-mail:</span> (lucilia@ufop.edu.br) <br>
+                                            Área de química do ICEA<br>
+                                            <span class="descricao-vazia">Nenhuma outra informação fornecida pelo/a professor/a responsável</span>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                            
+                  <div class="view-content d-none" id="conteudoprojeto6">
+                    <div class="campl-row">
+                      <div class="campl-column12 campl-hide-teaser-divider campl-teasers-borders campl-column-first">
+                        <div class="campl-content-container campl-vertical-padding node node-news-article">
+                          <div class="campl-vertical-teaser campl-teaser campl-teaser-border campl-content-container campl-side-padding">
+                            <div class="campl-content-container campl-vertical-teaser-img">
+                              <div class="field field-name-field-imagem-destaque field-type-image field-label-hidden">
+                                <div class="field-items">
+                                  <div class="field-item even">
+                                    <div class="jumbotron text-center" style="
+                                    border-radius:.5em;
+                                    margin:0;
+                                    padding:2em 0em;
+                                    background-image: url('https://icea.ufop.br/sites/default/files/styles/os_files_xxlarge/public/icea/files/predios_e_cantina.jpg?m=1617829490&itok=LD3adigM');
+                                    background-size: cover;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    box-shadow: 0 -10px 5em 2em #fff inset;
+                                    ">
+                                      <div  style="
+                                      margin: 0 2em;
+                                      border-radius: 1em;
+                                      padding: 2em 5em;
+                                      background: radial-gradient(white,#ffffffbb, transparent);
+                                      backdrop-filter: 
+                                        blur(6px)
+                                        hue-rotate(35deg)
+                                        brightness(1.25)
+                                        saturate(1.5)
+                                        sepia(.35);
+                                      ">
+                                        <h1 style="color:black">Preparatório para Química Inorgânica  </h1>
+                                        <p style="color:#111">Por: LUCILIA ALVES LINHARES</p>
+                                      </div>
+                                    </div>
+                                    
+                                    <p onclick="toggleInorganica()" style="margin:1em 0;cursor:pointer">← Voltar</p>
+                                    <div class="jumbotron" style="
+                                    margin: 0;
+                                    padding:1em 3em;
+                                    border-radius:.5em;
+                                    box-shadow: 0 0px 1em #55555555 inset;
+                                    ">
+                                      <h3>Detalhes do projeto</h3>
+                                      <button class="btn btn-default" id="buscar" style="
+                                        font-size:1.5em;
+                                        background:#ad2a43;
+                                        color:white;
+                                        position:absolute;
+                                        right:2em;
+                                        margin-top:-2.5em;
+                                        ">Candidatar</button>
+                                      <hr>
+                                      <div class="collapse show" id="collapse-filtros">
+                                        <div class="row">
+                                          <div class="col-sm-6">
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Professor:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>LUCILIA ALVES LINHARES</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Departamento:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>DECEA, DEQUI</h4>
+                                            </div>
+                                            <div class="col-sm-4 text-right">
+                                              <h4 class="text-bold">Campus:</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                              <h4>ICEA</h4>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-6" style="border-left: 2px solid #ddd">
+                                            <h3 class="text-bold" style="margin-top:0;padding-top:0">Resumo:</h3>
+                                            <p>
+                                              Preparatório para Química Inorgânica (Cursinho pré vestibular da Ufop)para alunos de 1° e 2° anos do ensino médio
+                                            </p>                                            
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <h3 class="text-bold">Beneficios: </h3><p>
+                                            20 horas semanais<br>Bolsa no valor de R$400,00 mensais
+                                          </p>
+                                        </div>
+                                      </div>
+
+                                      <div style="
+                                      margin: 1em 0;
+                                      border-radius: .5em;
+                                      padding: 1em 2em;
+                                      backdrop-filter: brightness(1.25)
+                                      " id="projeto-decsi">
+                                        <div class="row">
+                                          <h3 >Contato:  </h3><hr>
+                                          <p>  
+                                            Aos interessados:<br>
+                                            <span class="text-bold">e-mail:</span> (lucilia@ufop.edu.br) <br>
+                                            Área de química do ICEA<br>
+                                            <span class="descricao-vazia">Nenhuma outra informação fornecida pelo/a professor/a responsável</span>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
                             
                   <div class="view-content" id="bannerCTS">
                     <div class="campl-row">
@@ -768,7 +1518,7 @@
                             <div class="campl-content-container campl-vertical-teaser-img">
                               <div class="field field-name-field-imagem-destaque field-type-image field-label-hidden">
                                 <div class="field-items">
-                                  <div class="field-item even">
+                                  <div class="field-item even" id="banner-toggle-visualizacao">
                                     
                                     <div class="jumbotron text-center" style="
                                     border-radius:.5em;
@@ -803,7 +1553,7 @@
                             </div>
                             <div class="campl-content-container campl-vertical-teaser-txt">
                               <h3 class='campl-teaser-title'>
-                                <a href="/noticias/oportunidades/editais-de-bolsa-com-inscricoes-abertas">
+                                <a id="link-toggle-visualizacao">
                                   Novo módulo de indexação de projetos
                                 </a>
                               </h3>
@@ -1516,19 +2266,40 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-      //$('#botao-toggle-visualizacao').click();
+      toggleVisualizacao();
+      toggleVisualizacao();
+      toggleVisualizacao();
+      //$('#projetoPodcast').click();
     });
-    $('#botao-toggle-visualizacao').on('click',function(){
-      // esconde o conteúdo original
-      $('#bannerCTS').addClass('d-none');
-      $('#conteudoOriginal').addClass('d-none');
-      $('#vejaMais').addClass('d-none');
-      $('#conteudoOriginalSidebar').addClass('d-none');
-      $('#page-content').addClass('campl-column12');
-      // mostra o conteúdo alternativo
-      $('#tituloPagina').html('Projetos de Pesquisa, extensão e iniciação - ICEA');
-      $('#conteudoAlternativo').removeClass('d-none');
-    })
+
+    $('#botao-toggle-visualizacao, #banner-toggle-visualizacao, #link-toggle-visualizacao').on('click', function(){
+      toggleVisualizacao();
+    });
+
+    function toggleVisualizacao(){
+      if(!$('#bannerCTS').hasClass('d-none')){
+        // esconde o conteúdo original
+        $('#bannerCTS').addClass('d-none');
+        $('#conteudoOriginal').addClass('d-none');
+        $('#vejaMais').addClass('d-none');
+        $('#conteudoOriginalSidebar').addClass('d-none');
+        $('#page-content').addClass('campl-column12');
+        // mostra o conteúdo alternativo
+        $('#tituloPagina').html('Projetos de Pesquisa, extensão e iniciação - ICEA');
+        $('#conteudoAlternativo').removeClass('d-none');
+      }else{
+        // mostra o conteúdo original
+        $('#bannerCTS').removeClass('d-none');
+        $('#conteudoOriginal').removeClass('d-none');
+        $('#vejaMais').removeClass('d-none');
+        $('#conteudoOriginalSidebar').removeClass('d-none');
+        $('#page-content').removeClass('campl-column12');
+        // esconde o conteúdo alternativo
+        $('#tituloPagina').html('Noticias');
+        $('#conteudoAlternativo').addClass('d-none');
+      }
+    }
+
     $('#toggler').on('click',function(){
       $('#collapse-filtros').toggleClass('show');
       if($('#toggler').children('i').hasClass('fa-chevron-down')){
@@ -1540,7 +2311,68 @@
         $('#toggler').children('i').removeClass('fa-chevron-up');
         $('#buscar').addClass('d-none');
       }
-    })
+    });
+
+    function togglePodcast(){
+      if($('#conteudoprojeto1').hasClass('d-none')){
+        $('#conteudoAlternativo').addClass('d-none');
+        $('#conteudoprojeto1').removeClass('d-none');
+      }else{
+        $('#conteudoAlternativo').removeClass('d-none');
+        $('#conteudoprojeto1').addClass('d-none');
+      }
+    }
+
+    function toggleMasterclass(){
+      if($('#conteudoprojeto2').hasClass('d-none')){
+        $('#conteudoAlternativo').addClass('d-none');
+        $('#conteudoprojeto2').removeClass('d-none');
+      }else{
+        $('#conteudoAlternativo').removeClass('d-none');
+        $('#conteudoprojeto2').addClass('d-none');
+      }
+    }
+
+    function toggleFutsal(){
+      if($('#conteudoprojeto3').hasClass('d-none')){
+        $('#conteudoAlternativo').addClass('d-none');
+        $('#conteudoprojeto3').removeClass('d-none');
+      }else{
+        $('#conteudoAlternativo').removeClass('d-none');
+        $('#conteudoprojeto3').addClass('d-none');
+      }
+    }
+
+    function toggleQuimica(){
+      if($('#conteudoprojeto4').hasClass('d-none')){
+        $('#conteudoAlternativo').addClass('d-none');
+        $('#conteudoprojeto4').removeClass('d-none');
+      }else{
+        $('#conteudoAlternativo').removeClass('d-none');
+        $('#conteudoprojeto4').addClass('d-none');
+      }
+    }
+
+    function toggleOrganica(){
+      if($('#conteudoprojeto5').hasClass('d-none')){
+        $('#conteudoAlternativo').addClass('d-none');
+        $('#conteudoprojeto5').removeClass('d-none');
+      }else{
+        $('#conteudoAlternativo').removeClass('d-none');
+        $('#conteudoprojeto5').addClass('d-none');
+      }
+    }
+
+    function toggleInorganica(){
+      if($('#conteudoprojeto6').hasClass('d-none')){
+        $('#conteudoAlternativo').addClass('d-none');
+        $('#conteudoprojeto6').removeClass('d-none');
+      }else{
+        $('#conteudoAlternativo').removeClass('d-none');
+        $('#conteudoprojeto6').addClass('d-none');
+      }
+    }
+
   </script>
 </body>
 </html>
